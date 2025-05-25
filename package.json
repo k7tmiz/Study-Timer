@@ -1,0 +1,28 @@
+{
+    "name": "Study-Timer",
+    "version": "1.0.0",
+    "description": "90分钟学习 + 20分钟休息的时间管理应用",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "author": "k7tmiz",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^25.9.8",
+        "electron-builder": "^24.13.3"
+    },
+    "build": {
+        "appId": "com.k7tmiz.studytimer",
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb",
+                "rpm"
+            ],
+            "category": "Study"
+        }
+    }
+}
